@@ -43,8 +43,15 @@
                         ul
                             li
                                 a
-                                    font-size: clamp(14px, calc(1vw * 16/14.4), 16px)
-                                    color: #0000008A
+                                    font-family: 'TT Norms'
+                                    font-style: normal
+                                    font-weight: 700
+                                    font-size: 16px
+                                    line-height: 20px
+                                    color: rgba(0, 0, 0, 0.54)
+                                    &:hover
+                                        color: black
+                                    font-weight: 1000
                                 .sub-menu
                                     display: none
                                     position: absolute
@@ -79,6 +86,12 @@
                                     &:hover
                                         .sub-menu
                                             display: block
+                                .booking
+                                    width: 13px
+                                    margin-right: 9px
+                                .rooms
+                                    width: 10px
+                                    margin-left: 6px
                                 
                     &.bottom
                         grid-row: 2/3
@@ -277,6 +290,7 @@
                         height: 8px
                         margin-left: 15px
         .prices-main
+            position: relative
             >.h2
                 font-family: 'Tenor Sans'
                 font-style: normal
@@ -377,7 +391,38 @@
                         .link
                             a
                                 padding-inline: 7.5px
-
+            .to-left
+                display: none
+                width: 70px
+                height: 70px
+                background-image: url(../img/slider-left-act.png)
+                background-size: contain
+                background-repeat: no-repeat
+                position: absolute
+                top: 54%
+                left: -3%
+                z-index: 100
+                cursor: pointer
+            .to-right
+                display: none
+                width: 70px
+                height: 70px
+                background-image: url(../img/slider-right-act.png)
+                background-size: contain
+                background-repeat: no-repeat
+                position: absolute
+                top: 54%
+                right: -3%
+                z-index: 100
+                cursor: pointer
+            &.left
+                .to-left
+                    background-image: url(../img/slider-left-un.png)
+                    cursor: default
+            &.right
+                .to-right
+                    background-image: url(../img/slider-right-un.png)
+                    cursor: default
         .for-whom
             min-height: 500px
             display: grid
@@ -674,6 +719,7 @@
                         line-height: 120%
                         color: #514F4F
         .constantly-clients
+            position: relative
             .h2
                 font-family: 'Tenor Sans'
                 font-style: normal
@@ -681,6 +727,45 @@
                 font-size: 44px
                 line-height: 120%
                 color: #000000
+                margin-bottom: 40px
+            .slider
+                display: flex
+                column-gap: 63px
+                overflow: hidden
+                position: relative
+                img
+                    width: 253px
+                    border-radius: 25px
+            .to-left
+                width: 70px
+                height: 70px
+                background-image: url(../img/slider-left-act.png)
+                background-size: contain
+                background-repeat: no-repeat
+                position: absolute
+                top: 52%
+                left: -3%
+                z-index: 100
+                cursor: pointer
+            .to-right
+                width: 70px
+                height: 70px
+                background-image: url(../img/slider-right-act.png)
+                background-size: contain
+                background-repeat: no-repeat
+                position: absolute
+                top: 52%
+                right: -3%
+                z-index: 100
+                cursor: pointer
+            &.left
+                .to-left
+                    background-image: url(../img/slider-left-un.png)
+                    cursor: default
+            &.right
+                .to-right
+                    background-image: url(../img/slider-right-un.png)
+                    cursor: default
         .gift-certificate
             display: grid
             grid-template-columns: repeat(12, 1fr)
