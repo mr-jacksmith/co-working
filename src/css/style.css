@@ -1,0 +1,57 @@
+#nav-menu ul {
+    display: none;
+    position: absolute;
+
+}
+
+#nav-menu > li:hover > ul {
+    display: block;
+}
+
+#nav-menu ul ul {
+    left: 100%;
+}
+
+#nav-menu li {
+    position: relative;
+}
+
+#nav-menu li.phone-number {
+    float: right;
+}
+
+#nav-menu li > a {
+    display: block;
+    padding: 5px;
+    text-decoration: none;
+    color: black;
+    border: 1px solid grey;
+    border-radius: 3px;
+    background: white;
+}
+
+#nav-menu ul li > a {
+    display: block;
+    padding: 5px 20px;
+    text-decoration: none;
+    color: black;
+    background: #F3F3F3;
+}
+
+#nav-menu ul li:hover > a {
+    background: #E7E7E7;
+}
+
+#nav-menu ul li:first-child > a {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+#nav-menu ul li:last-child > a {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+#nav-menu ul li:only-child > a {
+    border-radius: 0;
+}

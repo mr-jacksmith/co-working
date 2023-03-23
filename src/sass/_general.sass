@@ -1,0 +1,814 @@
+.container
+    width: 1200px
+    margin: 0 auto
+    margin-top: 100px
+
+.main-block
+    background-color: #F9F9F9
+    header
+        background: url(../img/header-img.png) 1150px bottom no-repeat, url(../img/header-background.png) 1160px 160px no-repeat
+        background-size: 40%, 30%
+        .navigation
+            box-shadow: 0px 0px 34px rgba(0, 0, 0, 0.12)
+            .navbar
+                position: relative
+                margin-top: 0
+                display: grid
+                grid-template-columns: 2fr 4fr 2fr
+                grid-template-rows: 79px 62px
+                
+                .logo
+                    overflow: hidden
+                    grid-row: 1/2
+                    grid-column: 1/2
+                    display: flex
+                    align-items: center
+                    img
+                        width: clamp(84px, calc(1vw * 123/14.4), 123px)
+                        height: clamp(24.5px, calc(1vw * 36/14.4), 36px)
+                .nav-links
+                    ul
+                        list-style: none
+                        li
+                            a
+                                text-decoration: none
+                    &>ul
+                        display: flex
+                        justify-content: space-between
+                        align-items: center
+                    &.top
+                        grid-row: 1/2
+                        grid-column: 2/3
+                        align-self: center
+                        ul
+                            li
+                                a
+                                    font-size: clamp(14px, calc(1vw * 16/14.4), 16px)
+                                    color: #0000008A
+                                .sub-menu
+                                    display: none
+                                    position: absolute
+                                    z-index: 101
+                                    background-color: white
+                                    box-shadow: 0px 1px 7px rgba(0, 0, 0, 0.09)
+                                    width: 184px
+                                    height: 110px
+                                    border-radius: 4px
+                                    padding: 9px 10px 6px 12px
+                                    ul
+                                        display: flex
+                                        flex-direction: column
+                                        gap: 5px
+                                        >li
+                                            a
+                                                font-size: clamp(12px, calc(1vw * 14/14.4), 14px)
+                                            &:hover
+                                                .sub-menu-pow
+                                                    display: block
+                                    .sub-menu-pow
+                                        position: absolute
+                                        top: 9px
+                                        left: 55%
+                                        display: none
+                                        ul
+                                            li
+                                                img
+                                                    width: 6px
+                                                    height: 10px
+                                &:nth-of-type(4)
+                                    &:hover
+                                        .sub-menu
+                                            display: block
+                                
+                    &.bottom
+                        grid-row: 2/3
+                        grid-column: 2/3
+                        align-self: center
+                        ul
+                            li
+                                a
+                                    font-size: clamp(14px, calc(1vw * 15/14.4), 15px)
+                                    color: #0000008A
+
+                .phone-number
+                    grid-row: 1/2
+                    grid-column: 3/4
+                    display: flex
+                    justify-content: flex-end
+                    align-items: center
+                    font-size: clamp(16px, calc(1vw * 22/14.4), 22px)
+                    font-family: 'TT Norms'
+                    font-style: normal
+                    font-weight: 500
+                    line-height: 26px
+                    letter-spacing: -1.01538px
+                &::before
+                    content: ""
+                    position: absolute
+                    top: 50%
+                    left: 0
+                    height: 1px
+                    width: 100%
+                    z-index: 100
+                    background-color: #DDDFE0
+        .header-main
+            height: 591px
+            margin-top: 0
+            padding-block: 66px 119px
+            .hgroup
+                hgroup
+                    width: 640px
+                    margin-bottom: 40px
+                    h1
+                        font-weight: 400
+                        font-size: 61px
+                        line-height: 120%
+                        color: #36392F
+                        margin-bottom: 40px
+                    h2
+                        font-weight: 400
+                        font-size: 16px
+                        line-height: 26px
+                button
+                    padding: 18px 60px
+                    border-radius: 4px
+                    background: #FFE600
+                    border: none
+                    cursor: pointer
+                    color: #514F4F
+    main
+        padding-bottom: 100px
+        .advantages-main
+            .advantages-title
+                font-family: 'Tenor Sans'
+                font-style: normal
+                font-weight: 400
+                font-size: 44px
+                line-height: 120%
+                margin-bottom: 40px
+            .advantages
+                display: grid
+                grid-template-columns: repeat(6, 1fr)
+                grid-template-rows: 368px 368px
+                gap: 20px
+                div
+                    border-radius: 24px
+                    h2
+                        margin-bottom: 30px
+                        font-family: 'Tenor Sans'
+                        font-style: normal
+                        font-weight: 400
+                        font-size: 24px
+                        line-height: 120%
+                    h3
+                        font-family: 'TT Norms'
+                        font-style: normal
+                        font-weight: 400
+                        font-size: 16px
+                        line-height: 120%
+                        img
+                            width: 12px
+                            height: 12px
+                >div:nth-of-type(1)
+                    grid-row: 1/2
+                    grid-column: 1/4
+                    padding: 30px 42px 0px 42px
+                    background-color: #4F4F4F
+                    color: white
+                    background-image: url(../img/advantages-one-card.png) 
+                    background-size: 368px 390px 
+                    background-repeat: no-repeat
+                    background-position: center 150px
+                div:nth-of-type(2)
+                    grid-row: 1/2
+                    grid-column: 4/7
+                    padding: 30px 42px 0px 42px
+                    background-color: #EAECEF
+                    color: #2B291F
+                    background-image: url(../img/advantages-two-card.png) 
+                    background-size: contain 
+                    background-repeat: no-repeat
+                    background-position: center bottom
+                div:nth-of-type(3)
+                    grid-row: 2/3
+                    grid-column: 1/3
+                    padding: 20px 20px 0px 33px
+                    background-color: #EFEABB99
+                    color: #2B291F
+                    background-image: url(../img/advantages-three-card.png) 
+                    background-size: 70% 
+                    background-repeat: no-repeat
+                    background-position: 100px bottom
+                div:nth-of-type(4)
+                    grid-row: 2/3
+                    grid-column: 3/5
+                    padding: 20px 20px 0px 33px
+                    background-color: #EEE9E8
+                    color: #2B291F
+                    background-image: url(../img/advantages-four-card.png) 
+                    background-size: contain
+                    background-repeat: no-repeat
+                    background-position: center bottom
+                div:nth-of-type(5)
+                    grid-row: 2/3
+                    grid-column: 5/7
+                    padding: 20px 20px 0px 33px
+                    background-color: #FFF9C1
+                    color: black
+                    background-image: url(../img/advantages-five-card.png) 
+                    background-size: 75%
+                    background-repeat: no-repeat
+                    background-position: right bottom
+                    position: relative
+                    >div
+                        width: 163px
+                        height: 88px
+                        border-radius: 4px
+                        background-color: white
+                        font-family: 'TT Norms'
+                        font-style: normal
+                        font-weight: 400
+                        font-size: 10px
+                        line-height: 120%
+                        padding-block: 6px 7px
+                        padding-inline: 8px
+                        position: absolute
+                        top: 214px
+                        left: 17px
+        .discover-new-business
+            height: 663px
+            display: grid
+            grid-template-columns: 662px 1fr
+            gap: 6px
+            .img
+                background-image: url(../img/chair.png)
+                background-repeat: no-repeat
+                background-size: contain
+            .subject-business
+                margin: auto
+                h2
+                    font-family: 'Tenor Sans'
+                    font-style: normal
+                    font-weight: 400
+                    font-size: 44px
+                    line-height: 120%
+                    margin-bottom: 20px
+                h3
+                    font-family: 'TT Norms'
+                    font-style: normal
+                    font-weight: 400
+                    font-size: 16px
+                    line-height: 120%
+                    margin-bottom: 20px
+                .open-link
+                    a
+                        font-family: 'TT Norms'
+                        font-style: normal
+                        font-weight: 700
+                        font-size: 20px
+                        line-height: 120%
+                        color: #151515
+                    img
+                        widht: 14px
+                        height: 8px
+                        margin-left: 15px
+        .prices-main
+            >.h2
+                font-family: 'Tenor Sans'
+                font-style: normal
+                font-weight: 400
+                font-size: 44px
+                line-height: 120%
+                margin-bottom: 20px
+            >.h3
+                font-family: 'TT Norms'
+                font-style: normal
+                font-weight: 400
+                font-size: 18px
+                line-height: 120%
+                margin-bottom: 40px
+            .slider
+                display: flex
+                justify-content: space-between
+                >div
+                    width: 387px
+                    height: 507px
+                    border-radius: 24px
+                    background-color: white
+                    padding: 44px
+        .for-whom
+            min-height: 500px
+            display: grid
+            grid-template-columns: repeat(2, 1fr)
+            &-title
+                .h2
+                    font-family: 'Tenor Sans'
+                    font-style: normal
+                    font-weight: 400
+                    font-size: 44px
+                    line-height: 120%
+                    margin-bottom: 20px
+                .h3
+                    font-family: 'TT Norms'
+                    font-style: normal
+                    font-weight: 400
+                    font-size: 20px
+                    line-height: 120%
+                    margin-bottom: 40px
+                button
+                    padding: 18px 60px
+                    background-color: #FFE600
+                    border-radius: 4px
+                    cursor: pointer
+                    border: none
+                    font-family: 'TT Norms'
+                    font-style: normal
+                    font-weight: 500
+                    font-size: 16px
+                    line-height: 120%
+            &-cards
+                display: grid
+                grid-template-columns: repeat(2, 1fr)
+                grid-template-rows: repeat(2, 1fr)
+                row-gap: 20px
+                column-gap: 5px
+                &-img
+                    width: 285px
+                    height: 184px
+                    border-radius: 10px
+                div .for-whom-cards-title
+                    margin-top: 20px
+                    font-family: 'Tenor Sans'
+                    font-style: normal
+                    font-weight: 400
+                    font-size: 25px
+                    line-height: 120%
+                    color: #34343f
+                    position: relative
+                    &::before
+                        content: ""
+                        height: 1px
+                        width: 39px
+                        background-color: #353535
+                        position: absolute
+                        top: 120%
+                div:nth-of-type(1)
+                    .for-whom-cards-img
+                        background-image: url(../img/for-whom-cards-one.png)
+                        background-size: contain
+                div:nth-of-type(2)
+                    .for-whom-cards-img
+                        background-image: url(../img/for-whom-cards-two.png)
+                        background-size: contain
+                div:nth-of-type(3)
+                    .for-whom-cards-img
+                        background-image: url(../img/for-whom-cards-three.png)
+                        background-size: contain
+                div:nth-of-type(4)
+                    .for-whom-cards-img
+                        background-image: url(../img/for-whom-cards-four.png)
+                        background-size: contain
+        .advantages-coworking
+            &-title
+                margin-bottom: 40px
+                .h2
+                    font-family: 'Tenor Sans'   
+                    font-style: normal
+                    font-weight: 400
+                    font-size: 44px
+                    line-height: 120%
+                    margin-bottom: 20px
+                .h3
+                    width: 905px
+                    font-family: 'TT Norms'
+                    font-style: normal
+                    font-weight: 400
+                    font-size: 20px
+                    line-height: 120%
+            &-cards
+                display: grid
+                grid-template-columns: repeat(3, 1fr)
+                gap: 20px
+                >div
+                    &:not(:last-child)
+                        width: 387px
+                        height: 180px
+                        padding: 30px 11px 40px 30px
+                        position: relative
+                        background-color: #F2F2F2
+                        border-radius: 16px
+                        display: grid
+                        grid-auto-columns: 45px 1fr
+                        gap: 27px
+                        .img
+                            grid-column: 1/2                                
+                        .titles
+                            grid-column: 2/3
+                            .h3
+                                font-family: 'Tenor Sans'
+                                font-style: normal
+                                font-weight: 400
+                                font-size: 22px
+                                line-height: 120%
+                                color: #34343F
+                                margin-bottom: 20px
+                            .h4
+                                font-family: 'TT Norms'
+                                font-style: normal
+                                font-weight: 300
+                                font-size: 16px
+                                line-height: 120%
+                                color: #34343F
+                        .num-abs
+                            position: absolute
+                            bottom: 0px
+                            right: 20px
+                            font-family: 'Tenor Sans'
+                            font-style: normal
+                            font-weight: 400
+                            font-size: 64px
+                            line-height: 120%
+                            color: rgba(120, 120, 120, 0.04)
+                    &:last-child
+                        grid-column: 1/4
+                        margin: 0 auto
+                        a
+                            text-decoration: none
+                            font-family: 'TT Norms'
+                            font-style: normal
+                            font-weight: 400
+                            font-size: 20px
+                            line-height: 28px
+                            text-decoration-line: underline
+                            color: #070707
+                        img
+                            widht: 14px
+                            height: 8px
+                            margin-left: 14px
+                    &:nth-of-type(1)
+                        .img
+                            background: url(../img/advantages-1-image.png)
+                            background-size: contain
+                            background-repeat: no-repeat
+                    &:nth-of-type(2)
+                        .img
+                            background: url(../img/advantages-2-image.png)
+                            background-size: contain
+                            background-repeat: no-repeat
+                    &:nth-of-type(3)
+                        .img
+                            background: url(../img/advantages-3-image.png)
+                            background-size: contain
+                            background-repeat: no-repeat
+                    &:nth-of-type(4)
+                        .img
+                            background: url(../img/advantages-4-image.png)
+                            background-size: contain
+                            background-repeat: no-repeat
+                    &:nth-of-type(5)
+                        .img
+                            background: url(../img/advantages-5-image.png)
+                            background-size: contain
+                            background-repeat: no-repeat
+                    &:nth-of-type(6)
+                        .img
+                            background: url(../img/advantages-6-image.png)
+                            background-size: contain
+                            background-repeat: no-repeat
+        .self-booking
+            height: 570px
+            display: grid
+            grid-template-columns: repeat(2, 1fr)
+            &-title
+                margin: auto
+                .h2
+                    font-family: 'Tenor Sans'
+                    font-style: normal
+                    font-weight: 400
+                    font-size: 44px
+                    line-height: 120%
+                    color: #000000
+                    margin-bottom: 20px
+                .h3
+                    font-family: 'TT Norms'
+                    font-style: normal
+                    font-weight: 300
+                    font-size: 16px
+                    line-height: 120%
+                    color: #34343F
+                    margin-bottom: 40px
+                .link
+                    a
+                        padding: 18px 86px
+                        background: #FFE600
+                        border-radius: 4px
+                        text-decoration: none
+                        font-family: 'TT Norms'
+                        font-style: normal
+                        font-weight: 500
+                        font-size: 16px
+                        line-height: 120%
+                        color: #514F4F
+            &-img
+                background-image: url(../img/self-booking.png)
+                background-repeat: no-repeat
+                background-size: contain
+        .faq-main
+            .h2
+                font-family: 'Tenor Sans'
+                font-style: normal
+                font-weight: 400
+                font-size: 44px
+                line-height: 120%
+                color: #000000
+        .constantly-clients
+            .h2
+                font-family: 'Tenor Sans'
+                font-style: normal
+                font-weight: 400
+                font-size: 44px
+                line-height: 120%
+                color: #000000
+        .gift-certificate
+            display: grid
+            grid-template-columns: repeat(12, 1fr)
+            gap: 40px
+            height: 431px
+            &-title
+                grid-column: 1/6
+                .h2
+                    font-family: 'TT Norms'
+                    font-style: normal
+                    font-weight: 400
+                    font-size: 30px
+                    line-height: 120%
+                    color: #34343F
+                    margin-bottom: 20px
+                .h3
+                    font-family: 'TT Norms'
+                    font-style: normal
+                    font-weight: 500
+                    font-size: 16px
+                    line-height: 120%
+                    color: #34343F
+                    margin-bottom: 40px
+                .send
+                    margin-bottom: 20px
+                    button
+                        font-family: 'TT Norms'
+                        font-style: normal
+                        font-weight: 500
+                        font-size: 16px
+                        line-height: 120%
+                        text-align: center
+                        color: #514F4F
+                        padding: 18px 61px
+                        background: #FFE600
+                        border-radius: 4px
+                        border: none
+            .img
+                grid-column: 6/13
+                background-image: url(../img/gift-certificate.png)
+                background-repeat: no-repeat
+                background-size: contain
+        .seo-block
+            height: 403px
+            display: grid
+            grid-template-columns: repeat(2, 1fr)
+            .img
+                grid-column: 1/2
+                background-image: url(../img/seo-block.png)
+                background-repeat: no-repeat
+                background-size: contain
+                border-radius: 20px
+            &-title
+                width: 386px
+                grid-column: 2/3
+                margin-left: 122px
+                .h2
+                    font-family: 'Tenor Sans'
+                    font-style: normal
+                    font-weight: 400
+                    font-size: 44px
+                    line-height: 120%
+                    color: #070707
+                    margin-bottom: 20px
+                .h3
+                    font-family: 'TT Norms'
+                    font-style: normal
+                    font-weight: 400
+                    font-size: 16px
+                    line-height: 120%
+                    color: #34343F
+                    margin-bottom: 20px
+                .link
+                    a
+                        font-family: 'TT Norms'
+                        font-style: normal
+                        font-weight: 400
+                        font-size: 20px
+                        line-height: 120%
+                        text-decoration-line: underline
+                        color: #070707
+                        img
+                            widht: 14px
+                            height: 8px
+                            margin-left: 14px
+        .download-plan
+            height: 417px
+            background-image: url(../img/download-plan.png)
+            background-repeat: no-repeat
+            background-size: contain
+            background-position: right
+            background-color: #F2F2F2
+            padding: 81px 580px 156px 102px
+            .h2
+                font-family: 'Tenor Sans'
+                font-style: normal
+                font-weight: 400
+                font-size: 44px
+                line-height: 45px
+                color: #807F7F
+                margin-bottom: 38px
+            a
+                font-family: 'TT Norms'
+                font-style: normal
+                font-weight: 500
+                font-size: 16px
+                line-height: 19px
+                text-align: center
+                color: #514F4F
+                padding: 18px 61px
+                background: #FFE600
+                border-radius: 4px
+                text-decoration: none
+        .addresses
+            height: 504px
+            display: grid
+            grid-template-columns: repeat(12, 1fr)
+            gap: 40px
+            .text
+                grid-column: 1/6
+                div
+                    margin-bottom: 20px
+                .h2
+                    font-family: 'Tenor Sans'
+                    font-style: normal
+                    font-weight: 400
+                    font-size: 44px
+                    line-height: 120%
+                    color: #000000
+                    margin-bottom: 40px
+                .metro
+                    font-family: 'TT Norms'
+                    font-style: normal
+                    font-weight: 700
+                    font-size: 16px
+                    line-height: 120%
+                    color: #000000
+                    img
+                        width: 21.33px
+                        height: 14.59px
+                .address
+                    font-family: 'TT Norms'
+                    font-style: normal
+                    font-weight: 300
+                    font-size: 16px
+                    line-height: 120%
+                .phone-number
+                    font-family: 'TT Norms'
+                    font-style: normal
+                    font-weight: 700
+                    font-size: 16px
+                    line-height: 120%
+                    color: #34343F
+                    display: flex
+                    align-items: center
+                    img
+                        width: 22px
+                        margin-left: 16px
+                .shedule-of-work
+                    margin-bottom: 40px
+
+            &-img
+                grid-column: 6/13
+                background-image: url(../img/map.png)
+                background-repeat: no-repeat
+                background-size: contain
+    footer
+        background-color: white
+        padding-top: 38px
+        padding-bottom: 63.12px
+        .footer-main
+            position: relative
+            display: grid
+            grid-template-columns: 123.29px 233.9px 286px 257px
+            justify-content: space-between
+            row-gap: 40px
+            margin-top: 0px
+            .logo
+                background-image: url(../img/logo.png)
+                background-repeat: no-repeat
+                background-size: contain
+                width: 123.29px
+                height: 36px
+                margin-right: 84px
+            .links
+                div
+                    a
+                        font-family: 'TT Norms'
+                        font-style: normal
+                        font-weight: 500
+                        font-size: 16px
+                        line-height: 200%
+                        color: #34343F
+                        text-decoration: none
+
+            .links-2
+                margin-top: 0
+            .contacts
+                .phone-number
+                    font-family: 'TT Norms'
+                    font-style: normal
+                    font-weight: 500
+                    font-size: 27px
+                    line-height: 26px
+                    color: #34343F
+                    margin-bottom: 20px
+                    text-align: right
+                .call-free
+                    font-family: 'TT Norms'
+                    font-style: normal
+                    font-weight: 400
+                    font-size: 14px
+                    line-height: 26px
+                    color: #121212
+                    margin-bottom: 20px
+                    text-align: right
+                    img
+                        width: 14px
+                        margin-right: 8.56px
+                .social-networks
+                    text-align: right
+                    img
+                        width: 14px
+                        margin-left: 18px
+            .metro
+                div
+                    margin-bottom: 20px
+                &.text-1
+                    grid-column: 2/3
+                &.text-2
+                    grid-column: 3/4
+                &-img
+                    font-family: 'TT Norms'
+                    font-style: normal
+                    font-weight: 700
+                    font-size: 16px
+                    line-height: 120%
+                    img
+                        width: 21.33px
+                        margin-right: 8.67px
+                .phone-number
+                    font-family: 'TT Norms'
+                    font-style: normal
+                    font-weight: 700
+                    font-size: 16px
+                    line-height: 120%
+                    color: #34343F
+                    img
+                        width: 23px
+                        &:nth-of-type(1)
+                            margin-left: 22px
+                        &:nth-of-type(2)
+                            margin-left: 16.44px
+                .address
+                    font-family: 'TT Norms'
+                    font-style: normal
+                    font-weight: 400
+                    font-size: 16px
+                    line-height: 120%
+                .shedule-of-work
+                    font-family: 'TT Norms'
+                    font-style: normal
+                    font-weight: 400
+                    font-size: 16px
+                    line-height: 120%
+                    color: #34343F
+            &::before
+                content: ""
+                width: 100%
+                height: 1px
+                background-color: #DDDFE0
+                position: absolute
+                top: 85%
+            .terms
+                grid-row: 3/4
+                grid-column: 1/5
+                justify-self: center
+                font-family: 'TT Norms'
+                font-style: normal
+                font-weight: 500
+                font-size: 14px
+                line-height: 34px
+                color: #A5A5B3
