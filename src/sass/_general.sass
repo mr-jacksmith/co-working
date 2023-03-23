@@ -240,6 +240,10 @@
             display: grid
             grid-template-columns: 662px 1fr
             gap: 6px
+            background-image: url(../img/bg-open-bs.png)
+            background-repeat: no-repeat
+            background-size: 323px 303px
+            background-position: right bottom
             .img
                 background-image: url(../img/chair.png)
                 background-repeat: no-repeat
@@ -288,6 +292,92 @@
                 line-height: 120%
                 margin-bottom: 40px
                 width: 790px
+            >.slider
+                display: flex
+                justify-content: space-between
+                .price-card
+                    background-color: #ffffff
+                    width: 387px
+                    height: 507px
+                    border-radius: 24px
+                    padding: 45px
+                    display: grid
+                    grid-template-rows: 1fr 3fr 3fr 1fr 55px
+                    .h4
+                        font-family: 'Tenor Sans'
+                        font-style: normal
+                        font-weight: 400
+                        font-size: 25px
+                        line-height: 32px
+                        color: #34343F
+                    .one-address
+                        .address
+                            font-family: 'TT Norms'
+                            font-style: normal
+                            font-weight: 700
+                            font-size: 16px
+                            line-height: 26px
+                            color: #000000
+                        .line
+                            display: flex
+                            justify-content: space-between
+                            align-items: center
+                            margin-top: 10px
+                            .h5
+                                font-family: 'TT Norms'
+                                font-style: normal
+                                font-weight: 700
+                                font-size: 16px
+                                line-height: 120%
+                                color: #34343F
+                            .price
+                                font-family: 'TT Norms'
+                                font-style: normal
+                                font-weight: 400
+                                font-size: 33px
+                                line-height: 120%
+                                text-transform: uppercase
+                                color: #34343F
+                            .h6
+                                font-family: 'TT Norms'
+                                font-style: normal
+                                font-weight: 700
+                                font-size: 16px
+                                line-height: 120%
+                                color: #FFFFFF
+                                padding: 1px 20px
+                                background-color: #BFBFBF
+                                border-radius: 4px
+                                height: 21px
+                    .link
+                        grid-row: 5/6
+                        justify-self: center
+                        display: flex
+                        align-items: center
+                        a
+                            padding-block: 18px
+                            padding-inline: 54.5px
+                            background-color: #FFE600
+                            border-radius: 4px
+                            text-decoration: none
+                            font-family: 'TT Norms'
+                            font-style: normal
+                            font-weight: 500
+                            font-size: 16px
+                            line-height: 19px
+                            color: #514F4F
+                    &:last-child
+                        .one-address
+                            .line
+                                height: 39.59px
+                                .h6
+                                    a
+                                        text-decoration: none
+                                        color: #fff
+                        .link
+                            a
+                                padding-inline: 7.5px
+
         .for-whom
             min-height: 500px
             display: grid
